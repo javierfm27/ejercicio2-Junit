@@ -1,0 +1,9 @@
+========================================================================================================================
+EJERCICIO 2 - JUNIT
+========================================================================================================================
+Tal y como hemos visto en clase vamos a diseñar los tests para la clase BoundedQueue siguiendo los pasos para la modelación
+de las entradas.
+
+      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      PASO 1. (Identificar unidades funcionales, párametros, valores devueltos, excepcciones)
+      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
