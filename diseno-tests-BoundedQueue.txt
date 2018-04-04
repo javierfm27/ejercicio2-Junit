@@ -25,6 +25,37 @@ boolean isFull(): Devuelve true si la cola esta llena
 
 String toString(): Devuelve el string de la cola
 
+No tratamos los párametros del programa ya que son privados y por tanto no formara parte al tenerlos en cuenta
+
     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     PASO 2. Definir caracterizaciones
     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+BoundedQueue-> Tiene como párametro la capacidad de la cola, devuelve la Cola.
+  C1_Se crea la cola con la capacidad(int capacity)
+
+enQueue: Parametro el objeto que vamos a introducir en la cola.
+  C2_Elemento se introduce en la cola
+  C3_No se introduce elemento en la cola
+  Excepcion: NullPointerException-> Cubierto por C3
+  Excepcion: IllegalStateException-> Cubierto por C3
+
+deQueue-> Parametro es el estado de la cola. Devuelve el Objeto
+  C4_Devuelve el primer objeto
+  C5_No devuelve objeto
+  -Excepcion: IllegalStateException-> Cubierto por C5
+
+isEmpty(): Devuelve true,false. Parametro el estado de la cola.
+  Cubierto por C5
+
+isFull(): Devuelve true, false. Parametro el estado de la cola
+  Cubierto por C3
+
+toString(): Devuelve el String de la Cola. Parametro el estado de la cola
+
+¿Para que métodos es relevante las caracterizaciones?
+C1(Se crea la cola con la capacidad introucida)-> BoundedQueue
+C2(Elemento se introduce en la cola)-> enQueue,isFull
+C3(No se introduce ningun elemento en la cola)-> enQueue
+C4(Devuelve el primer objeto)-> deQueue
+C5(No devuelve objeto)-> deQueue, isEmpty
