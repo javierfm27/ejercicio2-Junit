@@ -59,3 +59,13 @@ C2(Elemento se introduce en la cola)-> enQueue,isFull
 C3(No se introduce ningun elemento en la cola)-> enQueue
 C4(Devuelve el primer objeto)-> deQueue
 C5(No devuelve objeto)-> deQueue, isEmpty
+
+      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      PASO 3. Modelar el dominio de entrada
+      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Para este paso, vamos a introducir los bloques que tendría cada caracterización con un ejemplo para cada bloque.
+
+Caracterizaciones |     b1         |      b2
+----------------------------------------------------------------------------------------------
+  C1              |   capacity>=0  |   capacity<0
+----------------------------------------------------------------------------------------------
