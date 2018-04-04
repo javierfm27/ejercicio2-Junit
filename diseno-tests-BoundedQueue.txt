@@ -7,3 +7,24 @@ de las entradas.
       >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       PASO 1. (Identificar unidades funcionales, párametros, valores devueltos, excepcciones)
       >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Primero vamos a identificar los métodos de clase y cual es la función de cada uno:
+
+BoundedQueue(int capacity): Constructor de la clase que se encarga de inicializar la cola.
+    -Excepción: IllegalArgumentException(la capacidad introducida al constructor es menos que uno)
+
+enQueue(Object o): Introduce el elemento O en la cola.
+    -Excepción: NullPointerException (El objeto O es nulo)
+    -Excepción: IllegalStateException (Se lanza cuando la cola esta llena)
+
+Object deQueue(): Devuelve el primer elemento que se introducio en la lista
+    -Excepcion: IllegalStateException (Se lanza cuando la lista esta vacía)
+
+boolean isEmpty(): Devuelve true si no hay mas elementos en la lista
+
+boolean isFull(): Devuelve true si la cola esta llena
+
+String toString(): Devuelve el string de la cola
+
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    PASO 2. Definir caracterizaciones
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
