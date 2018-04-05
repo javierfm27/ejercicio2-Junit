@@ -72,3 +72,26 @@ Caracterizaciones |     b1         |      b2
       >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       PASO 4. Cobertura de tests para elegir combinaciones
       >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Antes para ello vamos a etiquetar cada Caracterización y bloques tal y como hemos visto en los apuntes
+
+Caracterización |     b1      |     b2      |
+---------------------------------------------
+    A           |     A1      |     A2      |
+---------------------------------------------
+    B           |     B1      |     B2      |
+---------------------------------------------
+    C           |     C1      |     C2      |
+---------------------------------------------
+
+Como  hemos visto para el criterio BCC, hay que elegir unos requisitos base, donde en este caso escogemos el Happy Path.
+Donde A,B,C: True. Antes hacemos una tabla de cada metodo:
+
+Metodo       |    Caracterizacion   |  Reqisitos        |      No Posibles  |
+-----------------------------------------------------------------------------
+BoundedQueue |      C1              |      {T,F}        |      No Hay       |
+-----------------------------------------------------------------------------
+enQueue      |    C1, C2            |  {TT,FT,TF}       |      FT -> FF     |
+-----------------------------------------------------------------------------
+deQueue      |    C1,C2,C3          |  {TTT,TFT,TTF,FTT}|       FTT->FFF    |
+-----------------------------------------------------------------------------
