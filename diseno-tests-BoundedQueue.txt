@@ -36,29 +36,25 @@ BoundedQueue-> Tiene como párametro la capacidad de la cola, devuelve la Cola.
 
 enQueue: Parametro el objeto que vamos a introducir en la cola.
   C2_Elemento se introduce en la cola
-  C3_No se introduce elemento en la cola
   Excepcion: NullPointerException-> Cubierto por C3
   Excepcion: IllegalStateException-> Cubierto por C3
 
 deQueue-> Parametro es el estado de la cola. Devuelve el Objeto
-  C4_Devuelve el primer objeto
-  C5_No devuelve objeto
-  -Excepcion: IllegalStateException-> Cubierto por C5
+  C3_Devuelve el primer objeto
+  -Excepcion: IllegalStateException-> Cubierto por C3
 
 isEmpty(): Devuelve true,false. Parametro el estado de la cola.
-  Cubierto por C5
+  Cubierto por C3
 
 isFull(): Devuelve true, false. Parametro el estado de la cola
-  Cubierto por C3
+  Cubierto por C2
 
 toString(): Devuelve el String de la Cola. Parametro el estado de la cola
 
 ¿Para que métodos es relevante las caracterizaciones?
 C1(Se crea la cola con la capacidad introucida)-> BoundedQueue
 C2(Elemento se introduce en la cola)-> enQueue,isFull
-C3(No se introduce ningun elemento en la cola)-> enQueue
-C4(Devuelve el primer objeto)-> deQueue
-C5(No devuelve objeto)-> deQueue, isEmpty
+C3(Devuelve el primer objeto)-> deQueue, isEmpty
 
       >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       PASO 3. Modelar el dominio de entrada
@@ -67,5 +63,12 @@ Para este paso, vamos a introducir los bloques que tendría cada caracterizació
 
 Caracterizaciones |     b1         |      b2
 ----------------------------------------------------------------------------------------------
-  C1              |   capacity>=0  |   capacity<0
+  C1              |   true         |      False
 ----------------------------------------------------------------------------------------------
+  C2              |   True         |      False
+----------------------------------------------------------------------------------------------
+  C3              |   True         |      False
+
+      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      PASO 4. Cobertura de tests para elegir combinaciones
+      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
